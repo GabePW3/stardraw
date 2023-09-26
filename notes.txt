@@ -1,0 +1,54 @@
+We're gonna need a start and an (x1, y1) end (x2, y2). 
+
+To find the number of points on the circle, we can divide 2pi by our number (say, 5)
+
+Unit Circle: https://cdn-academy.pressidium.com/academy/wp-content/uploads/2021/03/Unit-circle.png
+
+Then, we'll convert the n (5) values into coordinates
+
+
+
+In order to do this, we need to imagine a circle (maybe the unit circle?)
+
+Return an ordered pair that you can use to set the bounds of the line
+
+The ordered pair can also be used to calculate the slope using the slope formula
+
+y=(m)x
+
+Slope is rise/run (x1-x2)/(y1-y2)
+
+
+
+POINTS::
+
+In order to find the point pairs, we divide 2pi by # of points.
+
+p(z) = ((cos(z/n)2pi),(sin(z/n)2pi))
+
+Now that we have our points, we need to store them in a dynamic array with n spots.
+
+Once they're in the array, we have user decide what the mod(n) will be.
+
+Given the mod m, we'll start at point xz, and create a line from point pz to point (pz+m)
+    pz(y)-pz+m(y) / pz(x)-pz+m(x) 
+
+Then, we'd make the second line, and there'll be a if/else for if the line makes a closed loop
+
+
+
+
+We can just have the constructor set two private integers for the number of points, frequency, and (optional) shift
+    Constructor should also clear the .txt file
+
+
+We'll need a creation function that just creates an array of pount locations, 
+    given the number of points, and the shift factor.
+
+Then, a function that takes each point and makes the lines, which calls:
+    a function that calculates the slope and info of each line (which calls)
+        a function that puts the points into desmos format in a .txt file
+    
+
+
+

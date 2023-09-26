@@ -29,4 +29,13 @@ string stars::lineMaker(int pointOne, int pointTwo){
 
 void stars::formatOutput(){
 
+ifstream outfile;
+outfile.open("drawer.cpp");
+
+for(int i = 0; i < numPoints; i++){
+    double m = ((pointArray[i+1] - pointArray[i+3])/(pointArray[i]-pointArray[i+2]));
+    
 }
+
+}
+//
